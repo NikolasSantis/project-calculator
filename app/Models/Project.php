@@ -19,5 +19,6 @@ class Project extends Model
         'type_id',
         'status_id',
         'description',
+        'total_time',
     ];
 }
