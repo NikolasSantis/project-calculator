@@ -19,6 +19,7 @@ return new class extends Migration
             $table->foreignId('type_id')->constrained('project_types', 'id')->nullable();
             $table->foreignId('status_id')->constrained('project_status', 'id')->nullable();
             $table->text('description')->nullable();
+            $table->decimal('total_time', 10, 2)->nullable();
             $table->timestamps();
         });
     }
